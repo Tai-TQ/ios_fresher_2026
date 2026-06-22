@@ -41,6 +41,9 @@ final class ViewController: UIViewController {
         addButton(title: "Table View") { [weak self] in
             self?.navigationController?.pushViewController(DemoTableViewController(), animated: true)
         }
+        addButton(title: "Components") { [weak self] in
+            self?.navigationController?.pushViewController(DemoComponentVC(), animated: true)
+        }
     }
     
     private func addButton(title: String, action: @escaping () -> Void) {
