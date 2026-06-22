@@ -44,6 +44,9 @@ final class ViewController: UIViewController {
         addButton(title: "Components") { [weak self] in
             self?.navigationController?.pushViewController(DemoComponentVC(), animated: true)
         }
+        addButton(title: "Collection View") { [weak self] in
+            self?.navigationController?.pushViewController(DemoCollectionViewController(), animated: true)
+        }
     }
     
     private func addButton(title: String, action: @escaping () -> Void) {
