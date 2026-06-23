@@ -50,6 +50,9 @@ final class ViewController: UIViewController {
         addButton(title: "Navigation") { [weak self] in
             self?.navigationController?.pushViewController(DemoNavigationViewController(), animated: true)
         }
+        addButton(title: "Animation") { [weak self] in
+            self?.navigationController?.pushViewController(DemoAnimationViewController(), animated: true)
+        }
     }
     
     private func addButton(title: String, action: @escaping () -> Void) {
