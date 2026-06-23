@@ -56,6 +56,10 @@ final class ViewController: UIViewController {
         addButton(title: "UI Debugging") { [weak self] in
             self?.navigationController?.pushViewController(DebuggingPlayground(), animated: true)
         }
+        
+        addButton(title: "Threading Fundamentals") { [weak self] in
+            self?.navigationController?.pushViewController(ThreadingPlayground(), animated: true)
+        }
     }
     
     private func addButton(title: String, action: @escaping () -> Void) {
