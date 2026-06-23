@@ -38,14 +38,17 @@ final class ViewController: UIViewController {
     }
 
     private func addDemoButtons() {
-        addButton(title: "Table View") { [weak self] in
-            self?.navigationController?.pushViewController(DemoTableViewController(), animated: true)
-        }
         addButton(title: "Components") { [weak self] in
             self?.navigationController?.pushViewController(DemoComponentVC(), animated: true)
         }
+        addButton(title: "Table View") { [weak self] in
+            self?.navigationController?.pushViewController(DemoTableViewController(), animated: true)
+        }
         addButton(title: "Collection View") { [weak self] in
             self?.navigationController?.pushViewController(DemoCollectionViewController(), animated: true)
+        }
+        addButton(title: "Navigation") { [weak self] in
+            self?.navigationController?.pushViewController(DemoNavigationViewController(), animated: true)
         }
     }
     

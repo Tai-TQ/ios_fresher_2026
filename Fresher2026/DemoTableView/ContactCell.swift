@@ -61,6 +61,7 @@ final class ContactCell: UITableViewCell {
     // MARK: - Layout
 
     private func setupLayout() {
+        selectionStyle = .none
         accessoryType = .disclosureIndicator
 
         let textStack = UIStackView(arrangedSubviews: [nameLabel, roleLabel])

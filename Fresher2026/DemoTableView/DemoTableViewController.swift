@@ -149,7 +149,6 @@ extension DemoTableViewController: UITableViewDataSource {
 extension DemoTableViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
 
         // Toggle favorite → the contact moves between sections, so reloadData
         // is the simplest correct update here.
