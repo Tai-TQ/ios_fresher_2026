@@ -189,7 +189,7 @@ final class OperationPipelinePlayground: UIViewController {
 
 /// Models async work on an OperationQueue. The queue observes isExecuting / isFinished
 /// via KVO; we fire those notifications from the `state` setter. See Module 4 §8.
-class AsyncOperation: Operation {
+class AsyncOperation: Operation, @unchecked Sendable {
 
     enum State: String {
         case ready, executing, finished
@@ -225,7 +225,7 @@ class AsyncOperation: Operation {
 
 // MARK: - A concrete async operation: a simulated download
 
-final class DownloadOperation: AsyncOperation {
+final class DownloadOperation: AsyncOperation, @unchecked Sendable {
     let id: Int
     private(set) var output: String?
     var onLog: ((String) -> Void)?

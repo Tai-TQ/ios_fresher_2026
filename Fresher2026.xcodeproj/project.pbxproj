@@ -14,11 +14,19 @@
 			remoteGlobalIDString = 88065E8A2FE5418200B6F65A;
 			remoteInfo = Fresher2026;
 		};
+		88065FBC2FEBBFBC00B6F65A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88065E832FE5418200B6F65A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88065E8A2FE5418200B6F65A;
+			remoteInfo = Fresher2026;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		88065E8B2FE5418200B6F65A /* Fresher2026.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fresher2026.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88065F982FEBB47000B6F65A /* Fresher2026Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fresher2026Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88065FB62FEBBFBC00B6F65A /* Fresher2026UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fresher2026UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -45,6 +53,11 @@
 			path = Fresher2026Tests;
 			sourceTree = "<group>";
 		};
+		88065FB72FEBBFBC00B6F65A /* Fresher2026UITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Fresher2026UITests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +75,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		88065FB32FEBBFBC00B6F65A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -70,6 +90,7 @@
 			children = (
 				88065E8D2FE5418200B6F65A /* Fresher2026 */,
 				88065F992FEBB47000B6F65A /* Fresher2026Tests */,
+				88065FB72FEBBFBC00B6F65A /* Fresher2026UITests */,
 				88065E8C2FE5418200B6F65A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +100,7 @@
 			children = (
 				88065E8B2FE5418200B6F65A /* Fresher2026.app */,
 				88065F982FEBB47000B6F65A /* Fresher2026Tests.xctest */,
+				88065FB62FEBBFBC00B6F65A /* Fresher2026UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +153,29 @@
 			productReference = 88065F982FEBB47000B6F65A /* Fresher2026Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		88065FB52FEBBFBC00B6F65A /* Fresher2026UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88065FBE2FEBBFBC00B6F65A /* Build configuration list for PBXNativeTarget "Fresher2026UITests" */;
+			buildPhases = (
+				88065FB22FEBBFBC00B6F65A /* Sources */,
+				88065FB32FEBBFBC00B6F65A /* Frameworks */,
+				88065FB42FEBBFBC00B6F65A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88065FBD2FEBBFBC00B6F65A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				88065FB72FEBBFBC00B6F65A /* Fresher2026UITests */,
+			);
+			name = Fresher2026UITests;
+			packageProductDependencies = (
+			);
+			productName = Fresher2026UITests;
+			productReference = 88065FB62FEBBFBC00B6F65A /* Fresher2026UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -145,6 +190,10 @@
 						CreatedOnToolsVersion = 26.3;
 					};
 					88065F972FEBB47000B6F65A = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = 88065E8A2FE5418200B6F65A;
+					};
+					88065FB52FEBBFBC00B6F65A = {
 						CreatedOnToolsVersion = 26.3;
 						TestTargetID = 88065E8A2FE5418200B6F65A;
 					};
@@ -166,6 +215,7 @@
 			targets = (
 				88065E8A2FE5418200B6F65A /* Fresher2026 */,
 				88065F972FEBB47000B6F65A /* Fresher2026Tests */,
+				88065FB52FEBBFBC00B6F65A /* Fresher2026UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -179,6 +229,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		88065F962FEBB47000B6F65A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88065FB42FEBBFBC00B6F65A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -202,6 +259,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		88065FB22FEBBFBC00B6F65A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -209,6 +273,11 @@
 			isa = PBXTargetDependency;
 			target = 88065E8A2FE5418200B6F65A /* Fresher2026 */;
 			targetProxy = 88065F9C2FEBB47000B6F65A /* PBXContainerItemProxy */;
+		};
+		88065FBD2FEBBFBC00B6F65A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88065E8A2FE5418200B6F65A /* Fresher2026 */;
+			targetProxy = 88065FBC2FEBBFBC00B6F65A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -434,6 +503,44 @@
 			};
 			name = Release;
 		};
+		88065FBF2FEBBFBC00B6F65A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zalo.Fresher2026UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fresher2026;
+			};
+			name = Debug;
+		};
+		88065FC02FEBBFBC00B6F65A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zalo.Fresher2026UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fresher2026;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -460,6 +567,15 @@
 			buildConfigurations = (
 				88065F9F2FEBB47000B6F65A /* Debug */,
 				88065FA02FEBB47000B6F65A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88065FBE2FEBBFBC00B6F65A /* Build configuration list for PBXNativeTarget "Fresher2026UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88065FBF2FEBBFBC00B6F65A /* Debug */,
+				88065FC02FEBBFBC00B6F65A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
